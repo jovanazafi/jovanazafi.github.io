@@ -22,17 +22,25 @@ ul.task-list li input[type="checkbox"] {
 }
   
 .about-links .icon-link {
-  margin-right: 16px;
+  margin-right: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 26px;      /* uniform outer box */
+  height: 26px;
 }
 
 .about-links .icon-link i,
 .about-links .icon-link svg {
-  width: 22px ;   /* uniform width */
-  height: 22px ;  /* uniform height */
-  display: block;           /* removes unwanted padding */
+  width: 22px;
+  height: 22px;
+  display: block;
+  flex-shrink: 0;   /* prevents distortion */
+}
+
+.about-links .icon-link svg {
+  overflow: visible;  /* FIX: prevents clipped icons */
+  vertical-align: middle;
 }
 </style>
 
