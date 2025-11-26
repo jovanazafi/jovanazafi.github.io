@@ -58,18 +58,24 @@ ul.task-list li input[type="checkbox"] {
   -webkit-overflow-scrolling: touch;
 }
 
-  @media (max-width: 480px) {
+ @media (max-width: 480px) {
   .about-links .icon-link {
     width: 26px;
     height: 26px;
-  align-items: center;
-  justify-content: center; 
+    display: flex;
+    align-items: center;      /* vertical centering */
+    justify-content: center;  /* horizontal centering */
+    padding: 0;               /* remove any padding */
   }
 
   .about-links .icon-link i,
   .about-links .icon-link svg {
     width: 16px;
     height: 16px;
+    margin: 0;                /* remove any margin */
+    padding: 0;               /* remove any padding */
+    line-height: 0;           /* ensures proper vertical alignment */
+    display: block;           /* prevents inline misalignment */
   }
 }
   
