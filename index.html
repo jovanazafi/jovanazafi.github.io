@@ -17,23 +17,23 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; / 
   vertical-align: middle;
 }
   
 .about-links .icon-link {
-  margin-right: 8px;                    /* closer spacing */
+  margin-right: 8px;                    
   display: inline-flex;
   align-items: center;
   justify-content: center;
   
-  width: 32px;                          /* size of the frame */
+  width: 32px;                        
   height: 32px;
 
-  border: 1px solid #ccc;               /* subtle frame */
-  border-radius: 8px;                   /* rounded shape */
+  border: 1px solid #ccc;             
+  border-radius: 8px;                   
   
-  background-color: #f9f9f9;            /* light background (optional) */
+  background-color: #f9f9f9;            
   transition: all 0.2s ease;
 }
 
@@ -44,15 +44,17 @@ ul.task-list li input[type="checkbox"] {
 
 .about-links .icon-link i,
 .about-links .icon-link svg {
-  width: 20px;                          /* icon size inside frame */
+  width: 20px;                          
   height: 20px;
   display: block;
   flex-shrink: 0;
 }
 
   .about-links {
-  flex-wrap: nowrap;
-  overflow-x: auto;   /* horizontally scrollable instead of stacking */
+  display: flex !important;        
+  flex-direction: row !important;  
+  flex-wrap: nowrap !important; 
+  overflow-x: auto;   
   -webkit-overflow-scrolling: touch;
 }
 
