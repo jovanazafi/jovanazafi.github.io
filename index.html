@@ -22,25 +22,32 @@ ul.task-list li input[type="checkbox"] {
 }
   
 .about-links .icon-link {
-  margin-right: 10px;
+  margin-right: 8px;                    /* closer spacing */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;      /* uniform outer box */
-  height: 26px;
+  
+  width: 32px;                          /* size of the frame */
+  height: 32px;
+
+  border: 1px solid #ccc;               /* subtle frame */
+  border-radius: 8px;                   /* rounded shape */
+  
+  background-color: #f9f9f9;            /* light background (optional) */
+  transition: all 0.2s ease;
+}
+
+.about-links .icon-link:hover {
+  border-color: #0066cc;
+  background-color: #eef6ff;
 }
 
 .about-links .icon-link i,
 .about-links .icon-link svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;                          /* icon size inside frame */
+  height: 20px;
   display: block;
-  flex-shrink: 0;   /* prevents distortion */
-}
-
-.about-links .icon-link svg {
-  overflow: visible;  /* FIX: prevents clipped icons */
-  vertical-align: middle;
+  flex-shrink: 0;
 }
 </style>
 
