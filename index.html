@@ -55,6 +55,23 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: auto;   /* horizontally scrollable instead of stacking */
   -webkit-overflow-scrolling: touch;
 }
+
+  @media (max-width: 480px) {
+  .about-links {
+    gap: 4px; /* closer on mobile */
+  }
+
+  .about-links .icon-link {
+    width: 26px;   /* shrink slightly */
+    height: 26px;
+  }
+
+  .about-links .icon-link i,
+  .about-links .icon-link svg {
+    width: 16px;  /* scale down icons */
+    height: 16px;
+  }
+}
   
 </style>
 
