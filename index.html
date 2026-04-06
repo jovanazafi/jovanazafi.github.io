@@ -146,7 +146,6 @@
       background: var(--rule);
     }
 
-    /* Bio */
     .bio-grid { max-width: 640px; }
 
     .bio-text p {
@@ -227,7 +226,6 @@
     .field-tag:hover { color: var(--accent); border-color: var(--accent-light); background: #e8f0f8; }
     .field-tag.active { color: var(--paper); background: var(--accent); border-color: var(--accent); }
 
-    /* Research */
     .paper {
       margin-bottom: 2.8rem;
       padding-bottom: 2.8rem;
@@ -295,7 +293,7 @@
       margin-top: 0.5rem;
     }
 
-    .abstract.open { max-height: 600px; }
+    .abstract.open { max-height: 800px; }
 
     .toggle-abstract {
       background: none;
@@ -309,6 +307,7 @@
       padding: 0;
       transition: color 0.2s;
       margin-top: 0.4rem;
+      display: block;
     }
 
     .toggle-abstract:hover { color: var(--accent); }
@@ -341,7 +340,6 @@
 
     #filter-clear:hover { color: var(--accent); border-color: var(--accent-light); }
 
-    /* Writing / Teaching */
     .writing-item {
       display: flex;
       gap: 1.5rem;
@@ -393,7 +391,6 @@
     main section:nth-child(2) { animation-delay: 0.1s; }
     main section:nth-child(3) { animation-delay: 0.15s; }
     main section:nth-child(4) { animation-delay: 0.2s; }
-    main section:nth-child(5) { animation-delay: 0.25s; }
 
     @media (max-width: 768px) {
       aside { position: relative; width: 100%; height: auto; padding: 1.5rem 1.5rem 1.2rem; }
@@ -419,7 +416,7 @@
     <nav>
       <a href="#about" class="active">About</a>
       <a href="#research">Research</a>
-      <a href="#teaching">Teaching & Activities</a>
+      <a href="#teaching">Teaching</a>
     </nav>
 
     <div class="sidebar-contacts">
@@ -503,7 +500,7 @@
         </div>
       </div>
 
-      <!-- Published peer-reviewed (English) -->
+      <!-- Paper 1 -->
       <div class="paper">
         <div class="paper-status published">Published · Sociologija, 2025</div>
         <div class="paper-title">
@@ -516,8 +513,13 @@
           <span class="paper-tag">Political Sociology</span>
           <span class="paper-tag">Comparative Research</span>
         </div>
+        <button class="toggle-abstract" onclick="toggleAbstract(this)">+ Abstract</button>
+        <div class="abstract">
+          Recent research suggests that sexist attitudes can significantly influence political preferences and electoral behavior. Studies of recent elections in countries such as the United States indicate that sexism is an increasingly important predictor of party preferences. This paper investigates the impact of political sexism on populist party preferences in Serbia. Given that the ruling party, Srpska Napredna Stranka (SNS), exhibits populist characteristics, we expect sexist attitudes to be more prevalent among its supporters. Using data from a 2021 online public opinion survey conducted by the Institute of Social Sciences in Belgrade, which implemented the Comparative Study of Electoral Systems Module 6 questionnaire, we find that authoritarian and traditionalist party preferences are associated with higher levels of sexist political attitudes. Furthermore, the analysis indicates that individual authoritarianism plays a key role in shaping both sexist attitudes and populist support.
+        </div>
       </div>
 
+      <!-- Paper 2 -->
       <div class="paper">
         <div class="paper-status published">Published · Social Sciences, 2023</div>
         <div class="paper-title">
@@ -525,14 +527,19 @@
             Work–Life Conflict and Job Satisfaction: The Moderating Role of Gender and Household Income in Western Europe
           </a>
         </div>
-        <div class="paper-coauthors">with Vladimir Mentus</div>
+        <div class="paper-coauthors">with Viktor Mentus</div>
         <div class="paper-tags">
           <span class="paper-tag">Sociology of Work</span>
           <span class="paper-tag">Labor Markets</span>
           <span class="paper-tag">Comparative Research</span>
         </div>
+        <button class="toggle-abstract" onclick="toggleAbstract(this)">+ Abstract</button>
+        <div class="abstract">
+          Although many potential moderators of the work–life conflict and job satisfaction relationship are well-studied, previous research has often overlooked the potential influence of different income groups on this dynamic. Our aim in this paper is to test this moderation effect within the context of Western Europe. Additionally, we carry out the analysis for men and women separately, as this dynamic may be strongly influenced by gender. Using data from the tenth round of the European Social Survey for twelve countries, we found a significant positive moderating effect of household income on the relationship between work–life conflict and job satisfaction for women, while for men the moderation effect is not significant. Our results suggest that for women, higher household income may serve as a buffer, alleviating the detrimental impact of individual work–life conflict on job satisfaction.
+        </div>
       </div>
 
+      <!-- Paper 3 -->
       <div class="paper">
         <div class="paper-status published">Published · Sociologija, 2021</div>
         <div class="paper-title">
@@ -540,14 +547,19 @@
             Institutional Trust, Political Participation, and Corruption: A European Comparative Perspective
           </a>
         </div>
-        <div class="paper-coauthors">with Branka Matijević and Božidar Filipović</div>
+        <div class="paper-coauthors">with Bojana Matijević and Božidar Filipović</div>
         <div class="paper-tags">
           <span class="paper-tag">Political Sociology</span>
           <span class="paper-tag">Comparative Research</span>
           <span class="paper-tag">Social Stratification</span>
         </div>
+        <button class="toggle-abstract" onclick="toggleAbstract(this)">+ Abstract</button>
+        <div class="abstract">
+          Despite the theoretical and political importance of the relationship between institutional trust and different forms of political participation in Europe, theoretical and empirical focus on post-industrial economies leave the literature wanting of explanations of cross-national variation in political participation. In this article, we test whether levels of corruption influence the relationship between institutional trust and participation. We rely on the 9th wave of the European Social Survey results for an in-depth analysis of the relationship between institutional trust, political participation, and perceived corruption in 27 countries. The multilevel regression analysis results show that the effect of institutional trust on institutionalised political participation (including voting) is moderated by corruption. However, corruption does not moderate the relationship between institutional trust and non-institutionalised forms of participation.
+        </div>
       </div>
 
+      <!-- Paper 4 -->
       <div class="paper">
         <div class="paper-status published">Published · Stanovništvo, 2024</div>
         <div class="paper-title">
@@ -557,6 +569,10 @@
           <span class="paper-tag">Labor Markets</span>
           <span class="paper-tag">Sociology of Work</span>
         </div>
+        <button class="toggle-abstract" onclick="toggleAbstract(this)">+ Abstract</button>
+        <div class="abstract">
+          The analysis is based on data from the European Social Survey in 2018, with a sample of 1,265 respondents in Serbia. Survival analysis is applied to illustrate changes over time in the studied life event, along with Kaplan-Meier survival function estimates for comparisons across gender and locality. The results indicate a delay in professional transitions during the study period, but not necessarily their destandardization. Life trajectories of men and women had become increasingly similar up to the collapse of socialism and the rise of social inequalities, when this trend was halted. Transition patterns between individuals from rural and urban areas are, however, becoming more similar. Taking into account the intense societal changes during the analyzed period, the transformations observed in professional transitions may be a consequence of these specific social changes.
+        </div>
       </div>
 
       <!-- Book chapter -->
@@ -565,13 +581,17 @@
         <div class="paper-title">
           Beyond Crisis: Micro- and Macro-Level Determinants of Subjective Job Insecurity Among Europe's Youth
         </div>
-        <div class="paper-venue" style="font-family:'DM Mono',monospace;font-size:0.68rem;font-style:italic;color:var(--ink-faint);margin-bottom:0.6rem;">
+        <div style="font-family:'DM Mono',monospace;font-size:0.68rem;font-style:italic;color:var(--ink-faint);margin-bottom:0.6rem;">
           In: Youth, Young Adulthood and Society series
         </div>
         <div class="paper-tags">
           <span class="paper-tag">Labor Markets</span>
           <span class="paper-tag">Sociology of Work</span>
           <span class="paper-tag">Comparative Research</span>
+        </div>
+        <button class="toggle-abstract" onclick="toggleAbstract(this)">+ Abstract</button>
+        <div class="abstract">
+          This chapter examines subjective job insecurity among young Europeans focusing on youth aged 15–34. The aim is to explore how micro- and macro-level factors shape job insecurity before and after the Great Recession, using multilevel regression models with data from the 2004 and 2010 European Social Survey waves across 23 to 24 countries. Results show that individual-level characteristics, such as education, contract type, social class, and labour market experiences, remain the primary predictors of perceived job insecurity in both periods. However, the structure of these determinants shifted: age effects that were protective before the crisis disappeared, a gender gap emerged, and class penalties intensified. At the macro level, national unemployment rates were a significant predictor of youth job insecurity before the crisis but lost their predictive power in 2010. These findings suggest that the Great Recession did not merely raise the level of youth job insecurity but reconfigured which individual and contextual factors shape it.
         </div>
       </div>
 
